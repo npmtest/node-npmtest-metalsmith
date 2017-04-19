@@ -1,5 +1,7 @@
-<html lang="en"><head>
-    <title>Code coverage report for node-npmtest-metalsmith/metalsmith/lib/index.js</title>
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for node-npmtest-metalsmith/node_modules/metalsmith/lib/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -192,7 +194,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-metalsmith">npmtest-metalsmith (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-metalsmith/metalsmith/lib/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-metalsmith/node_modules/metalsmith/lib/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">21.64% <small>(37 / 171)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -208,11 +210,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-metalsmith/metalsmith/lib/</a> » index.js</div>
+    <div class="path"><a href="../../../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-metalsmith/node_modules/metalsmith/lib/</a> &#187; index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tbody><tr><td class="line-count">1
+<tr><td class="line-count">1
 2
 3
 4
@@ -959,18 +961,18 @@ module.exports = Metalsmith;
  * @param {String} directory
  */
 &nbsp;
-<span class="fstat-no" title="function not covered">function Metalsmith(directory){</span>
-<span class="cstat-no" title="statement not covered">  if (!(this instanceof Metalsmith)) <span class="cstat-no" title="statement not covered">return new Metalsmith(directory);</span></span>
-<span class="cstat-no" title="statement not covered">  assert(directory, 'You must pass a working directory path.');</span>
-<span class="cstat-no" title="statement not covered">  this.plugins = [];</span>
-<span class="cstat-no" title="statement not covered">  this.ignores = [];</span>
-<span class="cstat-no" title="statement not covered">  this.directory(directory);</span>
-<span class="cstat-no" title="statement not covered">  this.metadata({});</span>
-<span class="cstat-no" title="statement not covered">  this.source('src');</span>
-<span class="cstat-no" title="statement not covered">  this.destination('build');</span>
-<span class="cstat-no" title="statement not covered">  this.concurrency(Infinity);</span>
-<span class="cstat-no" title="statement not covered">  this.clean(true);</span>
-<span class="cstat-no" title="statement not covered">  this.frontmatter(true);</span>
+<span class="fstat-no" title="function not covered" >function Metalsmith(directory){</span>
+<span class="cstat-no" title="statement not covered" >  if (!(this instanceof Metalsmith)) <span class="cstat-no" title="statement not covered" >return new Metalsmith(directory);</span></span>
+<span class="cstat-no" title="statement not covered" >  assert(directory, 'You must pass a working directory path.');</span>
+<span class="cstat-no" title="statement not covered" >  this.plugins = [];</span>
+<span class="cstat-no" title="statement not covered" >  this.ignores = [];</span>
+<span class="cstat-no" title="statement not covered" >  this.directory(directory);</span>
+<span class="cstat-no" title="statement not covered" >  this.metadata({});</span>
+<span class="cstat-no" title="statement not covered" >  this.source('src');</span>
+<span class="cstat-no" title="statement not covered" >  this.destination('build');</span>
+<span class="cstat-no" title="statement not covered" >  this.concurrency(Infinity);</span>
+<span class="cstat-no" title="statement not covered" >  this.clean(true);</span>
+<span class="cstat-no" title="statement not covered" >  this.frontmatter(true);</span>
 }
 &nbsp;
 /**
@@ -980,9 +982,9 @@ module.exports = Metalsmith;
  * @return {Metalsmith}
  */
 &nbsp;
-Metalsmith.prototype.use = <span class="fstat-no" title="function not covered">function(plugin){</span>
-<span class="cstat-no" title="statement not covered">  this.plugins.push(plugin);</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.use = <span class="fstat-no" title="function not covered" >function(plugin){</span>
+<span class="cstat-no" title="statement not covered" >  this.plugins.push(plugin);</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -992,11 +994,11 @@ Metalsmith.prototype.use = <span class="fstat-no" title="function not covered">f
  * @return {Object or Metalsmith}
  */
 &nbsp;
-Metalsmith.prototype.directory = <span class="fstat-no" title="function not covered">function(directory){</span>
-<span class="cstat-no" title="statement not covered">  if (!arguments.length) <span class="cstat-no" title="statement not covered">return path.resolve(this._directory);</span></span>
-<span class="cstat-no" title="statement not covered">  assert(is.string(directory), 'You must pass a directory path string.');</span>
-<span class="cstat-no" title="statement not covered">  this._directory = directory;</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.directory = <span class="fstat-no" title="function not covered" >function(directory){</span>
+<span class="cstat-no" title="statement not covered" >  if (!arguments.length) <span class="cstat-no" title="statement not covered" >return path.resolve(this._directory);</span></span>
+<span class="cstat-no" title="statement not covered" >  assert(is.string(directory), 'You must pass a directory path string.');</span>
+<span class="cstat-no" title="statement not covered" >  this._directory = directory;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1006,11 +1008,11 @@ Metalsmith.prototype.directory = <span class="fstat-no" title="function not cove
  * @return {Object or Metalsmith}
  */
 &nbsp;
-Metalsmith.prototype.metadata = <span class="fstat-no" title="function not covered">function(metadata){</span>
-<span class="cstat-no" title="statement not covered">  if (!arguments.length) <span class="cstat-no" title="statement not covered">return this._metadata;</span></span>
-<span class="cstat-no" title="statement not covered">  assert(is.object(metadata), 'You must pass a metadata object.');</span>
-<span class="cstat-no" title="statement not covered">  this._metadata = clone(metadata);</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.metadata = <span class="fstat-no" title="function not covered" >function(metadata){</span>
+<span class="cstat-no" title="statement not covered" >  if (!arguments.length) <span class="cstat-no" title="statement not covered" >return this._metadata;</span></span>
+<span class="cstat-no" title="statement not covered" >  assert(is.object(metadata), 'You must pass a metadata object.');</span>
+<span class="cstat-no" title="statement not covered" >  this._metadata = clone(metadata);</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1020,11 +1022,11 @@ Metalsmith.prototype.metadata = <span class="fstat-no" title="function not cover
  * @return {String or Metalsmith}
  */
 &nbsp;
-Metalsmith.prototype.source = <span class="fstat-no" title="function not covered">function(path){</span>
-<span class="cstat-no" title="statement not covered">  if (!arguments.length) <span class="cstat-no" title="statement not covered">return this.path(this._source);</span></span>
-<span class="cstat-no" title="statement not covered">  assert(is.string(path), 'You must pass a source path string.');</span>
-<span class="cstat-no" title="statement not covered">  this._source = path;</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.source = <span class="fstat-no" title="function not covered" >function(path){</span>
+<span class="cstat-no" title="statement not covered" >  if (!arguments.length) <span class="cstat-no" title="statement not covered" >return this.path(this._source);</span></span>
+<span class="cstat-no" title="statement not covered" >  assert(is.string(path), 'You must pass a source path string.');</span>
+<span class="cstat-no" title="statement not covered" >  this._source = path;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1034,11 +1036,11 @@ Metalsmith.prototype.source = <span class="fstat-no" title="function not covered
  * @return {String or Metalsmith}
  */
 &nbsp;
-Metalsmith.prototype.destination = <span class="fstat-no" title="function not covered">function(path){</span>
-<span class="cstat-no" title="statement not covered">  if (!arguments.length) <span class="cstat-no" title="statement not covered">return this.path(this._destination);</span></span>
-<span class="cstat-no" title="statement not covered">  assert(is.string(path), 'You must pass a destination path string.');</span>
-<span class="cstat-no" title="statement not covered">  this._destination = path;</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.destination = <span class="fstat-no" title="function not covered" >function(path){</span>
+<span class="cstat-no" title="statement not covered" >  if (!arguments.length) <span class="cstat-no" title="statement not covered" >return this.path(this._destination);</span></span>
+<span class="cstat-no" title="statement not covered" >  assert(is.string(path), 'You must pass a destination path string.');</span>
+<span class="cstat-no" title="statement not covered" >  this._destination = path;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1048,11 +1050,11 @@ Metalsmith.prototype.destination = <span class="fstat-no" title="function not co
  * @return {Number or Metalsmith}
  */
 &nbsp;
-Metalsmith.prototype.concurrency = <span class="fstat-no" title="function not covered">function(max){</span>
-<span class="cstat-no" title="statement not covered">  if (!arguments.length) <span class="cstat-no" title="statement not covered">return this._concurrency;</span></span>
-<span class="cstat-no" title="statement not covered">  assert(is.number(max), 'You must pass a number for concurrency.');</span>
-<span class="cstat-no" title="statement not covered">  this._concurrency = max;</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.concurrency = <span class="fstat-no" title="function not covered" >function(max){</span>
+<span class="cstat-no" title="statement not covered" >  if (!arguments.length) <span class="cstat-no" title="statement not covered" >return this._concurrency;</span></span>
+<span class="cstat-no" title="statement not covered" >  assert(is.number(max), 'You must pass a number for concurrency.');</span>
+<span class="cstat-no" title="statement not covered" >  this._concurrency = max;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1061,11 +1063,11 @@ Metalsmith.prototype.concurrency = <span class="fstat-no" title="function not co
  * @param {Boolean} clean
  * @return {Boolean or Metalsmith}
  */
-Metalsmith.prototype.clean = <span class="fstat-no" title="function not covered">function(clean){</span>
-<span class="cstat-no" title="statement not covered">  if (!arguments.length) <span class="cstat-no" title="statement not covered">return this._clean;</span></span>
-<span class="cstat-no" title="statement not covered">  assert(is.boolean(clean), 'You must pass a boolean.');</span>
-<span class="cstat-no" title="statement not covered">  this._clean = clean;</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.clean = <span class="fstat-no" title="function not covered" >function(clean){</span>
+<span class="cstat-no" title="statement not covered" >  if (!arguments.length) <span class="cstat-no" title="statement not covered" >return this._clean;</span></span>
+<span class="cstat-no" title="statement not covered" >  assert(is.boolean(clean), 'You must pass a boolean.');</span>
+<span class="cstat-no" title="statement not covered" >  this._clean = clean;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1075,11 +1077,11 @@ Metalsmith.prototype.clean = <span class="fstat-no" title="function not covered"
  * @return {Boolean or Metalsmith}
  */
 &nbsp;
-Metalsmith.prototype.frontmatter = <span class="fstat-no" title="function not covered">function(frontmatter){</span>
-<span class="cstat-no" title="statement not covered">  if (!arguments.length) <span class="cstat-no" title="statement not covered">return this._frontmatter;</span></span>
-<span class="cstat-no" title="statement not covered">  assert(is.boolean(frontmatter), 'You must pass a boolean.');</span>
-<span class="cstat-no" title="statement not covered">  this._frontmatter = frontmatter;</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.frontmatter = <span class="fstat-no" title="function not covered" >function(frontmatter){</span>
+<span class="cstat-no" title="statement not covered" >  if (!arguments.length) <span class="cstat-no" title="statement not covered" >return this._frontmatter;</span></span>
+<span class="cstat-no" title="statement not covered" >  assert(is.boolean(frontmatter), 'You must pass a boolean.');</span>
+<span class="cstat-no" title="statement not covered" >  this._frontmatter = frontmatter;</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1088,10 +1090,10 @@ Metalsmith.prototype.frontmatter = <span class="fstat-no" title="function not co
  * @param {String or Strings} The names of files or directories to ignore.
  * @return {Metalsmith}
  */
-Metalsmith.prototype.ignore = <span class="fstat-no" title="function not covered">function(files){</span>
-<span class="cstat-no" title="statement not covered">  if (!arguments.length) <span class="cstat-no" title="statement not covered">return this.ignores.slice();</span></span>
-<span class="cstat-no" title="statement not covered">  this.ignores = this.ignores.concat(files);</span>
-<span class="cstat-no" title="statement not covered">  return this;</span>
+Metalsmith.prototype.ignore = <span class="fstat-no" title="function not covered" >function(files){</span>
+<span class="cstat-no" title="statement not covered" >  if (!arguments.length) <span class="cstat-no" title="statement not covered" >return this.ignores.slice();</span></span>
+<span class="cstat-no" title="statement not covered" >  this.ignores = this.ignores.concat(files);</span>
+<span class="cstat-no" title="statement not covered" >  return this;</span>
 };
 &nbsp;
 /**
@@ -1101,10 +1103,10 @@ Metalsmith.prototype.ignore = <span class="fstat-no" title="function not covered
  * @return {String}
  */
 &nbsp;
-Metalsmith.prototype.path = <span class="fstat-no" title="function not covered">function(){</span>
-<span class="cstat-no" title="statement not covered">  var paths = [].slice.call(arguments);</span>
-<span class="cstat-no" title="statement not covered">  paths.unshift(this.directory());</span>
-<span class="cstat-no" title="statement not covered">  return path.resolve.apply(path, paths);</span>
+Metalsmith.prototype.path = <span class="fstat-no" title="function not covered" >function(){</span>
+<span class="cstat-no" title="statement not covered" >  var paths = [].slice.call(arguments);</span>
+<span class="cstat-no" title="statement not covered" >  paths.unshift(this.directory());</span>
+<span class="cstat-no" title="statement not covered" >  return path.resolve.apply(path, paths);</span>
 };
 &nbsp;
 /**
@@ -1113,14 +1115,14 @@ Metalsmith.prototype.path = <span class="fstat-no" title="function not covered">
  * @return {Object}
  */
 &nbsp;
-Metalsmith.prototype.build = unyield(<span class="fstat-no" title="function not covered">function*(){</span>
-<span class="cstat-no" title="statement not covered">  var clean = this.clean();</span>
-<span class="cstat-no" title="statement not covered">  var dest = this.destination();</span>
-<span class="cstat-no" title="statement not covered">  if (clean) <span class="cstat-no" title="statement not covered">yield rm(path.join(dest, '*'));</span></span>
+Metalsmith.prototype.build = unyield(<span class="fstat-no" title="function not covered" >function*(){</span>
+<span class="cstat-no" title="statement not covered" >  var clean = this.clean();</span>
+<span class="cstat-no" title="statement not covered" >  var dest = this.destination();</span>
+<span class="cstat-no" title="statement not covered" >  if (clean) <span class="cstat-no" title="statement not covered" >yield rm(path.join(dest, '*'));</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  var files = yield this.process();</span>
-<span class="cstat-no" title="statement not covered">  yield this.write(files);</span>
-<span class="cstat-no" title="statement not covered">  return files;</span>
+<span class="cstat-no" title="statement not covered" >  var files = yield this.process();</span>
+<span class="cstat-no" title="statement not covered" >  yield this.write(files);</span>
+<span class="cstat-no" title="statement not covered" >  return files;</span>
 });
 &nbsp;
 /**
@@ -1129,10 +1131,10 @@ Metalsmith.prototype.build = unyield(<span class="fstat-no" title="function not 
  * @return {Object}
  */
 &nbsp;
-Metalsmith.prototype.process = unyield(<span class="fstat-no" title="function not covered">function*(){</span>
-<span class="cstat-no" title="statement not covered">  var files = yield this.read();</span>
-<span class="cstat-no" title="statement not covered">  files = yield this.run(files);</span>
-<span class="cstat-no" title="statement not covered">  return files;</span>
+Metalsmith.prototype.process = unyield(<span class="fstat-no" title="function not covered" >function*(){</span>
+<span class="cstat-no" title="statement not covered" >  var files = yield this.read();</span>
+<span class="cstat-no" title="statement not covered" >  files = yield this.run(files);</span>
+<span class="cstat-no" title="statement not covered" >  return files;</span>
 });
 &nbsp;
 /**
@@ -1143,11 +1145,11 @@ Metalsmith.prototype.process = unyield(<span class="fstat-no" title="function no
  * @return {Object}
  */
 &nbsp;
-Metalsmith.prototype.run = unyield(<span class="fstat-no" title="function not covered">function*(files, plugins){</span>
-<span class="cstat-no" title="statement not covered">  var ware = new Ware(plugins || this.plugins);</span>
-<span class="cstat-no" title="statement not covered">  var run = thunkify(ware.run.bind(ware));</span>
-<span class="cstat-no" title="statement not covered">  var res = yield run(files, this);</span>
-<span class="cstat-no" title="statement not covered">  return res[0];</span>
+Metalsmith.prototype.run = unyield(<span class="fstat-no" title="function not covered" >function*(files, plugins){</span>
+<span class="cstat-no" title="statement not covered" >  var ware = new Ware(plugins || this.plugins);</span>
+<span class="cstat-no" title="statement not covered" >  var run = thunkify(ware.run.bind(ware));</span>
+<span class="cstat-no" title="statement not covered" >  var res = yield run(files, this);</span>
+<span class="cstat-no" title="statement not covered" >  return res[0];</span>
 });
 &nbsp;
 /**
@@ -1158,29 +1160,29 @@ Metalsmith.prototype.run = unyield(<span class="fstat-no" title="function not co
  * @return {Object}
  */
 &nbsp;
-Metalsmith.prototype.read = unyield(<span class="fstat-no" title="function not covered">function*(dir){</span>
-<span class="cstat-no" title="statement not covered">  dir = dir || this.source();</span>
-<span class="cstat-no" title="statement not covered">  var read = this.readFile.bind(this);</span>
-<span class="cstat-no" title="statement not covered">  var concurrency = this.concurrency();</span>
-<span class="cstat-no" title="statement not covered">  var ignores = this.ignores || null;</span>
-<span class="cstat-no" title="statement not covered">  var paths = yield readdir(dir, ignores);</span>
-<span class="cstat-no" title="statement not covered">  var files = [];</span>
-<span class="cstat-no" title="statement not covered">  var complete = 0;</span>
-<span class="cstat-no" title="statement not covered">  var batch;</span>
+Metalsmith.prototype.read = unyield(<span class="fstat-no" title="function not covered" >function*(dir){</span>
+<span class="cstat-no" title="statement not covered" >  dir = dir || this.source();</span>
+<span class="cstat-no" title="statement not covered" >  var read = this.readFile.bind(this);</span>
+<span class="cstat-no" title="statement not covered" >  var concurrency = this.concurrency();</span>
+<span class="cstat-no" title="statement not covered" >  var ignores = this.ignores || null;</span>
+<span class="cstat-no" title="statement not covered" >  var paths = yield readdir(dir, ignores);</span>
+<span class="cstat-no" title="statement not covered" >  var files = [];</span>
+<span class="cstat-no" title="statement not covered" >  var complete = 0;</span>
+<span class="cstat-no" title="statement not covered" >  var batch;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  while (complete &lt; paths.length) {</span>
-<span class="cstat-no" title="statement not covered">    batch = paths.slice(complete, complete + concurrency);</span>
-<span class="cstat-no" title="statement not covered">    batch = yield batch.map(read);</span>
-<span class="cstat-no" title="statement not covered">    files = files.concat(batch);</span>
-<span class="cstat-no" title="statement not covered">    complete += concurrency;</span>
+<span class="cstat-no" title="statement not covered" >  while (complete &lt; paths.length) {</span>
+<span class="cstat-no" title="statement not covered" >    batch = paths.slice(complete, complete + concurrency);</span>
+<span class="cstat-no" title="statement not covered" >    batch = yield batch.map(read);</span>
+<span class="cstat-no" title="statement not covered" >    files = files.concat(batch);</span>
+<span class="cstat-no" title="statement not covered" >    complete += concurrency;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return paths.reduce(memoizer, {});</span>
+<span class="cstat-no" title="statement not covered" >  return paths.reduce(memoizer, {});</span>
 &nbsp;
-<span class="fstat-no" title="function not covered">  function memoizer(memo, file, i) {</span>
-<span class="cstat-no" title="statement not covered">    file = path.relative(dir, file);</span>
-<span class="cstat-no" title="statement not covered">    memo[file] = files[i];</span>
-<span class="cstat-no" title="statement not covered">    return memo;</span>
+<span class="fstat-no" title="function not covered" >  function memoizer(memo, file, i) {</span>
+<span class="cstat-no" title="statement not covered" >    file = path.relative(dir, file);</span>
+<span class="cstat-no" title="statement not covered" >    memo[file] = files[i];</span>
+<span class="cstat-no" title="statement not covered" >    return memo;</span>
   }
 });
 &nbsp;
@@ -1192,43 +1194,43 @@ Metalsmith.prototype.read = unyield(<span class="fstat-no" title="function not c
  * @return {Object}
  */
 &nbsp;
-Metalsmith.prototype.readFile = unyield(<span class="fstat-no" title="function not covered">function*(file){</span>
-<span class="cstat-no" title="statement not covered">  var src = this.source();</span>
-<span class="cstat-no" title="statement not covered">  var ret = {};</span>
+Metalsmith.prototype.readFile = unyield(<span class="fstat-no" title="function not covered" >function*(file){</span>
+<span class="cstat-no" title="statement not covered" >  var src = this.source();</span>
+<span class="cstat-no" title="statement not covered" >  var ret = {};</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  if (!absolute(file)) <span class="cstat-no" title="statement not covered">file = path.resolve(src, file);</span></span>
+<span class="cstat-no" title="statement not covered" >  if (!absolute(file)) <span class="cstat-no" title="statement not covered" >file = path.resolve(src, file);</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  try {</span>
-<span class="cstat-no" title="statement not covered">    var frontmatter = this.frontmatter();</span>
-<span class="cstat-no" title="statement not covered">    var stats = yield fs.stat(file);</span>
-<span class="cstat-no" title="statement not covered">    var buffer = yield fs.readFile(file);</span>
-<span class="cstat-no" title="statement not covered">    var parsed;</span>
+<span class="cstat-no" title="statement not covered" >  try {</span>
+<span class="cstat-no" title="statement not covered" >    var frontmatter = this.frontmatter();</span>
+<span class="cstat-no" title="statement not covered" >    var stats = yield fs.stat(file);</span>
+<span class="cstat-no" title="statement not covered" >    var buffer = yield fs.readFile(file);</span>
+<span class="cstat-no" title="statement not covered" >    var parsed;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">    if (frontmatter &amp;&amp; utf8(buffer)) {</span>
-<span class="cstat-no" title="statement not covered">      try {</span>
-<span class="cstat-no" title="statement not covered">        parsed = matter(buffer.toString());</span>
+<span class="cstat-no" title="statement not covered" >    if (frontmatter &amp;&amp; utf8(buffer)) {</span>
+<span class="cstat-no" title="statement not covered" >      try {</span>
+<span class="cstat-no" title="statement not covered" >        parsed = matter(buffer.toString());</span>
       } catch (e) {
-<span class="cstat-no" title="statement not covered">        var err = new Error('Invalid frontmatter in the file at: ' + file);</span>
-<span class="cstat-no" title="statement not covered">        err.code = 'invalid_frontmatter';</span>
-<span class="cstat-no" title="statement not covered">        throw err;</span>
+<span class="cstat-no" title="statement not covered" >        var err = new Error('Invalid frontmatter in the file at: ' + file);</span>
+<span class="cstat-no" title="statement not covered" >        err.code = 'invalid_frontmatter';</span>
+<span class="cstat-no" title="statement not covered" >        throw err;</span>
       }
 &nbsp;
-<span class="cstat-no" title="statement not covered">      ret = parsed.data;</span>
-<span class="cstat-no" title="statement not covered">      ret.contents = new Buffer(parsed.content);</span>
+<span class="cstat-no" title="statement not covered" >      ret = parsed.data;</span>
+<span class="cstat-no" title="statement not covered" >      ret.contents = new Buffer(parsed.content);</span>
     } else {
-<span class="cstat-no" title="statement not covered">      ret.contents = buffer;</span>
+<span class="cstat-no" title="statement not covered" >      ret.contents = buffer;</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered">    ret.mode = Mode(stats).toOctal();</span>
-<span class="cstat-no" title="statement not covered">    ret.stats = stats;</span>
+<span class="cstat-no" title="statement not covered" >    ret.mode = Mode(stats).toOctal();</span>
+<span class="cstat-no" title="statement not covered" >    ret.stats = stats;</span>
   } catch (e) {
-<span class="cstat-no" title="statement not covered">    if (e.code == 'invalid_frontmatter') <span class="cstat-no" title="statement not covered">throw e;</span></span>
-<span class="cstat-no" title="statement not covered">    e.message = 'Failed to read the file at: ' + file + '\n\n' + e.message;</span>
-<span class="cstat-no" title="statement not covered">    e.code = 'failed_read';</span>
-<span class="cstat-no" title="statement not covered">    throw e;</span>
+<span class="cstat-no" title="statement not covered" >    if (e.code == 'invalid_frontmatter') <span class="cstat-no" title="statement not covered" >throw e;</span></span>
+<span class="cstat-no" title="statement not covered" >    e.message = 'Failed to read the file at: ' + file + '\n\n' + e.message;</span>
+<span class="cstat-no" title="statement not covered" >    e.code = 'failed_read';</span>
+<span class="cstat-no" title="statement not covered" >    throw e;</span>
   }
 &nbsp;
-<span class="cstat-no" title="statement not covered">  return ret;</span>
+<span class="cstat-no" title="statement not covered" >  return ret;</span>
 });
 &nbsp;
 /**
@@ -1239,23 +1241,23 @@ Metalsmith.prototype.readFile = unyield(<span class="fstat-no" title="function n
  * @param {String} dir (optional)
  */
 &nbsp;
-Metalsmith.prototype.write = unyield(<span class="fstat-no" title="function not covered">function*(files, dir){</span>
-<span class="cstat-no" title="statement not covered">  dir = dir || this.destination();</span>
-<span class="cstat-no" title="statement not covered">  var write = this.writeFile.bind(this);</span>
-<span class="cstat-no" title="statement not covered">  var concurrency = this.concurrency();</span>
-<span class="cstat-no" title="statement not covered">  var keys = Object.keys(files);</span>
-<span class="cstat-no" title="statement not covered">  var complete = 0;</span>
-<span class="cstat-no" title="statement not covered">  var batch;</span>
+Metalsmith.prototype.write = unyield(<span class="fstat-no" title="function not covered" >function*(files, dir){</span>
+<span class="cstat-no" title="statement not covered" >  dir = dir || this.destination();</span>
+<span class="cstat-no" title="statement not covered" >  var write = this.writeFile.bind(this);</span>
+<span class="cstat-no" title="statement not covered" >  var concurrency = this.concurrency();</span>
+<span class="cstat-no" title="statement not covered" >  var keys = Object.keys(files);</span>
+<span class="cstat-no" title="statement not covered" >  var complete = 0;</span>
+<span class="cstat-no" title="statement not covered" >  var batch;</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  while (complete &lt; keys.length) {</span>
-<span class="cstat-no" title="statement not covered">    batch = keys.slice(complete, complete + concurrency);</span>
-<span class="cstat-no" title="statement not covered">    yield batch.map(writer);</span>
-<span class="cstat-no" title="statement not covered">    complete += concurrency;</span>
+<span class="cstat-no" title="statement not covered" >  while (complete &lt; keys.length) {</span>
+<span class="cstat-no" title="statement not covered" >    batch = keys.slice(complete, complete + concurrency);</span>
+<span class="cstat-no" title="statement not covered" >    yield batch.map(writer);</span>
+<span class="cstat-no" title="statement not covered" >    complete += concurrency;</span>
   }
 &nbsp;
-<span class="fstat-no" title="function not covered">  function writer(key){</span>
-<span class="cstat-no" title="statement not covered">    var file = path.resolve(dir, key);</span>
-<span class="cstat-no" title="statement not covered">    return write(file, files[key]);</span>
+<span class="fstat-no" title="function not covered" >  function writer(key){</span>
+<span class="cstat-no" title="statement not covered" >    var file = path.resolve(dir, key);</span>
+<span class="cstat-no" title="statement not covered" >    return write(file, files[key]);</span>
   }
 });
 &nbsp;
@@ -1267,25 +1269,24 @@ Metalsmith.prototype.write = unyield(<span class="fstat-no" title="function not 
  * @param {Object} data
  */
 &nbsp;
-Metalsmith.prototype.writeFile = unyield(<span class="fstat-no" title="function not covered">function*(file, data){</span>
-<span class="cstat-no" title="statement not covered">  var dest = this.destination();</span>
-<span class="cstat-no" title="statement not covered">  if (!absolute(file)) <span class="cstat-no" title="statement not covered">file = path.resolve(dest, file);</span></span>
+Metalsmith.prototype.writeFile = unyield(<span class="fstat-no" title="function not covered" >function*(file, data){</span>
+<span class="cstat-no" title="statement not covered" >  var dest = this.destination();</span>
+<span class="cstat-no" title="statement not covered" >  if (!absolute(file)) <span class="cstat-no" title="statement not covered" >file = path.resolve(dest, file);</span></span>
 &nbsp;
-<span class="cstat-no" title="statement not covered">  try {</span>
-<span class="cstat-no" title="statement not covered">    yield fs.outputFile(file, data.contents);</span>
-<span class="cstat-no" title="statement not covered">    if (data.mode) <span class="cstat-no" title="statement not covered">yield fs.chmod(file, data.mode);</span></span>
+<span class="cstat-no" title="statement not covered" >  try {</span>
+<span class="cstat-no" title="statement not covered" >    yield fs.outputFile(file, data.contents);</span>
+<span class="cstat-no" title="statement not covered" >    if (data.mode) <span class="cstat-no" title="statement not covered" >yield fs.chmod(file, data.mode);</span></span>
   } catch (e) {
-<span class="cstat-no" title="statement not covered">    e.message = 'Failed to write the file at: ' + file + '\n\n' + e.message;</span>
-<span class="cstat-no" title="statement not covered">    throw e;</span>
+<span class="cstat-no" title="statement not covered" >    e.message = 'Failed to write the file at: ' + file + '\n\n' + e.message;</span>
+<span class="cstat-no" title="statement not covered" >    throw e;</span>
   }
 });
 &nbsp;
 &nbsp;</pre></td></tr>
-</tbody></table></pre>
+</table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 20:33:25 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 19 2017 04:30:14 GMT+0000 (UTC)</div>
 </div>
-
-
-</body></html>
+</body>
+</html>
